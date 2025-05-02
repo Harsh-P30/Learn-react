@@ -239,25 +239,28 @@ reference -> https://github.com/acdlite/react-fiber-architecture
     create react app by vite <br>
     go to -> https://tailwindcss.com/docs/installation/using-vite <br>
     bottom of installation tag you get a "using vite" named tag  <br>
-        Install Tailwind CSS  Terminal ->  npm install tailwindcss @tailwindcss/vite <br>
+        Install Tailwind CSS  Terminal -> 
+                npm install tailwindcss @tailwindcss/vite <br>
         Configure the Vite plugin <br>
                 open "vite.config.ts" file <br>
                     replace with  ->  <br>
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+                                    import { defineConfig } from 'vite'
+                                    import react from '@vitejs/plugin-react'
+                                    import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
-export default defineConfig({
-plugins: [
-    react(),
-    tailwindcss()
-],
-})
+                                    // https://vite.dev/config/
+                                    export default defineConfig({
+                                    plugins: [
+                                        react(),
+                                        tailwindcss()
+                                    ],
+                                    })
 
 
 <br>
-import into css file (index.css) -> <br> @import "tailwindcss"; <br>
+import into css file (index.css) -> <br>
+     @import "tailwindcss"; <br>
 
-now you can run-> <br> npm run dev <br>
+now you can run-> <br> 
+    npm run dev <br>
