@@ -227,3 +227,8 @@ Some Hooks -> <br>
 ✅ useMemo → Caches computed values to avoid recalculating on every render.<br>
 ✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.<br>
 ✅ useReducer → Handles complex state updates with a reducer pattern.<br>
+
+
+
+<h1>Virtual DOM, Fibre and reconciliation</h1>
+reference -> https://github.com/acdlite/react-fiber-architecture
