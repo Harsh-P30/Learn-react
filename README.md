@@ -232,3 +232,29 @@ Some Hooks -> <br>
 
 <h1>Virtual DOM, Fibre and reconciliation</h1>
 reference -> https://github.com/acdlite/react-fiber-architecture
+
+
+
+<h1> TailwindCss 4.0 in Vite</h1>
+    create react app by vite
+    go to -> https://tailwindcss.com/docs/installation/using-vite
+    bottom of installation tag you get a "using vite" named tag 
+        Install Tailwind CSS  Terminal ->  npm install tailwindcss @tailwindcss/vite
+        Configure the Vite plugin
+                open "vite.config.ts" file
+                    replace with  -> 
+                                            import { defineConfig } from 'vite'
+                                            import react from '@vitejs/plugin-react'
+                                            import tailwindcss from '@tailwindcss/vite'
+
+                                            // https://vite.dev/config/
+                                            export default defineConfig({
+                                            plugins: [
+                                                react(),
+                                                tailwindcss()
+                                            ],
+                                            })
+
+    import into css file (index.css) ->  @import "tailwindcss";
+
+    now you can run->  npm run dev
