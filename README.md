@@ -236,25 +236,28 @@ reference -> https://github.com/acdlite/react-fiber-architecture
 
 
 <h1> TailwindCss 4.0 in Vite</h1>
-    create react app by vite
-    go to -> https://tailwindcss.com/docs/installation/using-vite
-    bottom of installation tag you get a "using vite" named tag 
-        Install Tailwind CSS  Terminal ->  npm install tailwindcss @tailwindcss/vite
-        Configure the Vite plugin
-                open "vite.config.ts" file
-                    replace with  -> 
-                                            import { defineConfig } from 'vite'
-                                            import react from '@vitejs/plugin-react'
-                                            import tailwindcss from '@tailwindcss/vite'
+    create react app by vite <br>
+    go to -> https://tailwindcss.com/docs/installation/using-vite <br>
+    bottom of installation tag you get a "using vite" named tag  <br>
+        Install Tailwind CSS  Terminal ->  npm install tailwindcss @tailwindcss/vite <br>
+        Configure the Vite plugin <br>
+                open "vite.config.ts" file <br>
+                    replace with  ->  <br>
 
-                                            // https://vite.dev/config/
-                                            export default defineConfig({
-                                            plugins: [
-                                                react(),
-                                                tailwindcss()
-                                            ],
-                                            })
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-    import into css file (index.css) ->  @import "tailwindcss";
+// https://vite.dev/config/
+export default defineConfig({
+plugins: [
+    react(),
+    tailwindcss()
+],
+})
 
-    now you can run->  npm run dev
+
+<br>
+import into css file (index.css) -> <br> @import "tailwindcss"; <br>
+
+now you can run-> <br> npm run dev <br>
