@@ -284,3 +284,11 @@ They let you send data,values or functions into components so they can behave dy
     <li>You can pass any type: sting, number, array, object, function.</li>
     <li>props allow component reuse with different content</li>
 </ul>
+
+
+
+<b> The name field in your package.json file should ideally **not contain any uppercase letters**. The widely accepted convention for npm package names is to use: <br>
+
+Lowercase letters <br>
+Hyphens (-) or underscores (_) to separate words <br>
+No spaces</b>
