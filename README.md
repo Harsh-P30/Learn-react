@@ -285,8 +285,8 @@ They let you send data,values or functions into components so they can behave dy
     <li>props allow component reuse with different content</li>
 </ul>
 
-
-
+<br>
+<h1>naming convention into package.json file</h1>
 <b> The name field in your package.json file should ideally **not contain any uppercase letters**. The widely accepted convention for npm package names is to use: <br>
 
 Lowercase letters <br>
