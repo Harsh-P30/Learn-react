@@ -46,7 +46,7 @@ it is too heavy its download everything related to react
 
 
 <h1>Bundler</h1>
-A bundler is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser. A fantastic feature of a bundler is that it generates a dependency graph as it traverses your first code files. This implies that beginning with the entry point you specified, the module bundler keeps track of both your source files’ dependencies and third-party dependencies. This dependency graph guarantees that all source and associated code files are kept up to date and error-free.
+A bundler is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser. A fantastic feature of a bundler is that it generates a dependency graph as it traverses your first code files. This implies that beginning with the entry point you specified, the module bundler keeps track of both your source files’ dependencies and third-party dependencies. This dependency graph guarantees that all source and associated code files are kept up to date and error-free. <br>
 ✅ Combines all .js / .jsx files <br>
 ✅ Converts JSX to plain JS (via Babel) <br>
 ✅ Transpiles modern JS (ES6+) to older JS (for browser support) <br>
