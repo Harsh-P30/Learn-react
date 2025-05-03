@@ -62,7 +62,7 @@ Add npm scripts
 Run npm start or npm run build
 
 <h3>Types of bundler</h3>
-<h5>Webpack</h5>
+<h4>Webpack</h4>
 Webpack is a module bundler — it takes all your project files (JavaScript, CSS, images, fonts, etc.), processes them, and bundles them into one or more optimized files that browsers can understand.
 
 ✅ Combines (bundles) your JS, CSS, images  <br>
@@ -98,7 +98,7 @@ loaders: babel-loader (JSX + ES6 → JS), css-loader + style-loader (CSS import 
 plugins: HtmlWebpackPlugin (injects your bundle into HTML)
 
 
-<h5>💥 What is Parcel? </h5>
+<h4>💥 What is Parcel? </h4>
 
 Parcel is a zero-config bundler — it bundles your JavaScript, JSX, CSS, images, fonts, and more, with almost no manual configuration.
 
@@ -158,7 +158,7 @@ Behind the scenes, Parcel uses Babel to handle modern JavaScript and JSX/TSX syn
 
 
 
-<h5>💥 What is Vite? </h5>
+<h4>💥 What is Vite? </h4>
 
 Vite (pronounced like “vite” in French = “fast”) is a next-generation frontend build tool that gives you:
 
@@ -271,14 +271,14 @@ now you can run-> <br>
 Props(short for properties) are inputs you pass from a parent component to a child component in React.
 They let you send data,values or functions into components so they can behave dynamically.
 
-<h5>why do we use props</h5>
+<h3>why do we use props</h3>
 <ul>
     <li>To customize a component's behavior.</li>
     <li>To reuse components with different data.</li>
     <li>To communicate between parent -> child components</li>
 </ul>
 
-<h5>Important Points</h5>
+<h3>Important Points</h3>
 <ul>
     <li>Props are read-only inside the child.</li>
     <li>You can pass any type: sting, number, array, object, function.</li>
@@ -292,6 +292,7 @@ They let you send data,values or functions into components so they can behave dy
 Lowercase letters <br>
 Hyphens (-) or underscores (_) to separate words <br>
 No spaces</b>
+<<<<<<< HEAD
 
 <br>
 <br>
@@ -312,3 +313,5 @@ No spaces</b>
 ✅ Manage internal state (with hooks like useState) <br>
 
 <b>a React component, start its name with an uppercase letter.</b>
+=======
+>>>>>>> d9a995919bff9cabd8dc086e5640dab3f23a931f
