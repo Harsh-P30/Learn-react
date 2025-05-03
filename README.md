@@ -264,3 +264,23 @@ import into css file (index.css) -> <br>
 
 now you can run-> <br> 
     npm run dev <br>
+
+
+<h1>💥 What are props?</h1>
+"props" is default name;
+Props(short for properties) are inputs you pass from a parent component to a child component in React.
+They let you send data,values or functions into components so they can behave dynamically.
+
+<h5>why do we use props</h5>
+<ul>
+    <li>To customize a component's behavior.</li>
+    <li>To reuse components with different data.</li>
+    <li>To communicate between parent -> child components</li>
+</ul>
+
+<h5>Important Points</h5>
+<ul>
+    <li>Props are read-only inside the child.</li>
+    <li>You can pass any type: sting, number, array, object, function.</li>
+    <li>props allow component reuse with different content</li>
+</ul>
