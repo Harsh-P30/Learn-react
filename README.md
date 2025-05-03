@@ -1,40 +1,47 @@
 # Learn_react
 Learning react from beginning 
-<h1>What is React</h1>
-<ul>
-    <li>React is a JavaScript library to build dynamic and interactive user interfaces.</li>
-    <li>Developed by facebook in 2011</li>
-    <li>React only run on browser not work on server and client.</li>
-    <li>Used to create single page website</li>
-    <li>React is based on Declarative programming. basically you define the target UI state and then react figures out how to reach that state. But in JavaScript you have to write code to reach that desired state and JavaScript is based on Imperative Programming.</li>
-</ul>
+## What is React
 
-<h3>React Cdn</h3>
-<ul>
-<li><script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script></li>
-<li>
+- React is a JavaScript library to build dynamic and interactive user interfaces.
+- Developed by facebook in 2011. 
+- React only run on browser not work on server and client.
+- Used to create single page website. 
+- React is based on Declarative programming. basically you define the target UI state and then react figures out how to reach that state. But in JavaScript you have to write code to reach that desired state and JavaScript is based on Imperative Programming.
+
+
+## React Cdn
+
+```bash
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+```
+```bash
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-</li>
-</ul>
+```
 
 
 
-<h1>Babel</h1>
+## Babel
 Babel is a JavaScript compiler. it convert new JavaScript into older JavaScript so it can support in all the browser and also convert JSX into Js. 
-<h3>Babel Cdn</h3> <br>
+# Babel Cdn
+
+```bash
     <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
-    <br>
+```
 after attaching cdn 
 <!-- Your custom script here -->
-add into your script type-> <br>
-    <script src="script.js" type="text/babel">
+add into your script type->
 
+```bash
+    <script src="script.js" type="text/babel">
+```
     Don't forget to use react cdn also
 
-<h5>Babel by npm</h5>
-<ul>
-<li>https://youtu.be/_ze46JgZpd4?si=H2J0p-lEC938Wec2 </li>
-<li>https://youtu.be/zVWKtnEm4fk?si=0HdZOZvjK6G6XnB7</li>
+# Babel by npm</h5>
+
+```bash
+https://youtu.be/_ze46JgZpd4?si=H2J0p-lEC938Wec2 
+https://youtu.be/zVWKtnEm4fk?si=0HdZOZvjK6G6XnB7
+```
 
 
 <h1>Create react by using create-react-app</h1>
@@ -45,33 +52,34 @@ it is too heavy its download everything related to react
     npm run build // to build folder
 
 
-<h1>Bundler</h1>
-A bundler is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser. A fantastic feature of a bundler is that it generates a dependency graph as it traverses your first code files. This implies that beginning with the entry point you specified, the module bundler keeps track of both your source files’ dependencies and third-party dependencies. This dependency graph guarantees that all source and associated code files are kept up to date and error-free. <br>
-✅ Combines all .js / .jsx files <br>
-✅ Converts JSX to plain JS (via Babel) <br>
-✅ Transpiles modern JS (ES6+) to older JS (for browser support) <br>
-✅ Optimizes (minifies) code for production <br>
-✅ Optionally processes CSS, images, fonts, etc. <br>
-✅ Steps to use a bundler
+## Bundler
+A bundler is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser. A fantastic feature of a bundler is that it generates a dependency graph as it traverses your first code files. This implies that beginning with the entry point you specified, the module bundler keeps track of both your source files’ dependencies and third-party dependencies. This dependency graph guarantees that all source and associated code files are kept up to date and error-free. .
+✅ Combines all .js / .jsx files .
+✅ Converts JSX to plain JS (via Babel) .
+✅ Transpiles modern JS (ES6+) to older JS (for browser support) .
+✅ Optimizes (minifies) code for production .
+✅ Optionally processes CSS, images, fonts, etc. 
+✅ Steps to use a bundler.
 
-Choose one (Webpack, Vite, Parcel, etc.)
-Install it + its loaders/plugins
+Choose one (Webpack, Vite, Parcel, etc.).
+Install it + its loaders/plugins .
 Set up babel.config.js or .babelrc
-Set up bundler config (webpack.config.js, vite.config.js)
-Add npm scripts
-Run npm start or npm run build
+Set up bundler config (webpack.config.js, vite.config.js) .
+Add npm scripts .
+Run npm start or npm run build .
 
-<h3>Types of bundler</h3>
-<h4>Webpack</h4>
+# Types of bundler
+
+# Webpack
 Webpack is a module bundler — it takes all your project files (JavaScript, CSS, images, fonts, etc.), processes them, and bundles them into one or more optimized files that browsers can understand.
 
-✅ Combines (bundles) your JS, CSS, images  <br>
-✅ Transforms JSX → JS (via Babel)   <br>
-✅ Transpiles ES6+ → ES5 (for browser support)   <br>
-✅ Optimizes the final output (minifies, tree-shakes unused code)  <br>
-✅ Provides a dev server with hot module reload (HMR)  <br>
+✅ Combines (bundles) your JS, CSS, images  .
+✅ Transforms JSX → JS (via Babel)   .
+✅ Transpiles ES6+ → ES5 (for browser support)   .
+✅ Optimizes the final output (minifies, tree-shakes unused code)  .
+✅ Provides a dev server with hot module reload (HMR)  .
 
-🔨 How does Webpack work?
+# 🔨 How does Webpack work?
 Webpack works with these core concepts:
 
 Entry
@@ -98,36 +106,40 @@ loaders: babel-loader (JSX + ES6 → JS), css-loader + style-loader (CSS import 
 plugins: HtmlWebpackPlugin (injects your bundle into HTML)
 
 
-<h4>💥 What is Parcel? </h4>
+# 💥 What is Parcel? 
 
 Parcel is a zero-config bundler — it bundles your JavaScript, JSX, CSS, images, fonts, and more, with almost no manual configuration.
 
-✅ Zero config → no need for webpack.config.js <br>
-✅ Built-in Babel, TypeScript, PostCSS support <br>
-✅ Hot Module Replacement (HMR) → updates the browser without full reload <br>
-✅ Automatic code splitting & optimization <br>
-✅ Fast dev server + optimized production build <br>
+✅ Zero config → no need for webpack.config.js .
+✅ Built-in Babel, TypeScript, PostCSS support .
+✅ Hot Module Replacement (HMR) → updates the browser without full reload .
+✅ Automatic code splitting & optimization .
+✅ Fast dev server + optimized production build .
 
-🔥 Why do React devs like Parcel?
-    It just works — you can start coding immediately.
-    You don’t need to install Babel or Webpack manually — Parcel detects JSX and transpiles it.
-    It handles assets automatically (images, CSS, fonts).
-    It’s great for small to medium React projects or prototypes.
+# 🔥 Why do React devs like Parcel?
+- It just works — you can start coding immediately.
+- You don’t need to install Babel or Webpack manually — Parcel detects JSX and transpiles it.
+- It handles assets automatically (images, CSS, fonts).
+- It’s great for small to medium React projects or prototypes.
 
-✅ How to set up React + Parcel <br>
+✅ How to set up React + Parcel.
 Here’s a step-by-step guide:-> 
 
 1️⃣ Create a new project
-
+```bash
     mkdir my-parcel-app
     cd my-parcel-app
     npm init -y
-    
-2️⃣ Install React + ReactDOM
-    npm install react react-dom
-3️⃣ Install Parcel
+```
 
+2️⃣ Install React + ReactDOM
+```bash
+    npm install react react-dom
+```
+3️⃣ Install Parcel
+```bash
 npm install --save-dev parcel
+```
 4️⃣ Create project files
 
     /my-parcel-app
@@ -149,56 +161,65 @@ Update package.json scripts
 Behind the scenes, Parcel uses Babel to handle modern JavaScript and JSX/TSX syntax.
 {
     Steps i used create a folder
+```bash
         npm init -y
         create html and js file
         npm install react react-dom
-        npm i --save-dev parcel
+        npm i --save-dev 
+```
 }
 
 
 
 
-<h4>💥 What is Vite? </h4>
+# 💥 What is Vite? </h4>
 
 Vite (pronounced like “vite” in French = “fast”) is a next-generation frontend build tool that gives you:
 
-✅ ultra-fast dev server (instant startup) <br>
-✅ lightning-fast hot module replacement (HMR) <br>
-✅ ES module–based architecture <br>
-✅ out-of-the-box React + JSX support <br>
-✅ optimized production builds (using Rollup under the hood) <br>
+✅ ultra-fast dev server (instant startup).
+✅ lightning-fast hot module replacement (HMR).
+✅ ES module–based architecture.
+✅ out-of-the-box React + JSX support.
+✅ optimized production builds (using Rollup under the hood).
 
-It was created by Evan You (the creator of Vue) and is now popular across React, Vue, Svelte, and even Vanilla JS projects. <br>
+It was created by Evan You (the creator of Vue) and is now popular across React, Vue, Svelte, and even Vanilla JS projects.
 
-🚀 Why React devs love Vite <br>
-    Instant dev server start → no matter how big your project
-    Fast HMR → save a file, and the update appears instantly in the browser
-    No config needed → React template works out of the box
-    Built-in JSX + TypeScript support → no Babel setup required
-    Optimized production builds → minified, tree-shaken, ready to deploy
+# 🚀 Why React devs love Vite
+- Instant dev server start → no matter how big your project
+- Fast HMR → save a file, and the update appears instantly in the browser
+- No config needed → React template works out of the box
+- Built-in JSX + TypeScript support → no Babel setup required
+- Optimized production builds → minified, tree-shaken, ready to deploy
 
-✅ How to set up React + Vite <br>
+# How to set up React + Vite.
     Here’s your step-by-step:
 
 1️⃣ Create a new project
-
+```bash
     npm create vite@latest my-vite-app
+```
     It will prompt you:
         ✔ Project name: my-vite-app
         ✔ Select a framework: React
         ✔ Select a variant: JavaScript
 2️⃣ Go into your project folder
-
+```bash
     cd my-vite-app
+```
 3️⃣ Install dependencies
-
+```bash
     npm install
-
+```
 4️⃣ Run the dev server
+```bash
     npm run dev
+```
     You’ll see:
     VITE vX.X.X  ready in XX ms
-  ➜  Local:   http://localhost:5173/         <br>
+  ➜  Local: 
+```bash
+http://localhost:5173/
+```
 5️⃣ Project structure
 
     /my-vite-app
@@ -212,116 +233,130 @@ It was created by Evan You (the creator of Vue) and is now popular across React,
 
  
 
-<h1>Virtual DOM, Fibre and reconciliation</h1>
-reference -> https://github.com/acdlite/react-fiber-architecture
+## Virtual DOM, Fibre and reconciliation</h1>
+
+reference ->
+```bash 
+ https://github.com/acdlite/react-fiber-architecture
+```
 
 
 
-<h1> TailwindCss 4.0 in Vite</h1>
-    create react app by vite <br>
-    go to -> https://tailwindcss.com/docs/installation/using-vite <br>
-    bottom of installation tag you get a "using vite" named tag  <br>
-        Install Tailwind CSS  Terminal -> <br>
-                npm install tailwindcss @tailwindcss/vite <br>
-        Configure the Vite plugin <br>
-                open "vite.config.ts" file <br>
-                    replace with  ->  <br>
+## TailwindCss 4.0 in Vite
 
-                                    import { defineConfig } from 'vite'
-                                    import react from '@vitejs/plugin-react'
-                                    import tailwindcss from '@tailwindcss/vite'
+create react app by vite.
+go to -> 
+```bash
+https://tailwindcss.com/docs/installation/using-vite 
+```
 
-                                    // https://vite.dev/config/
-                                    export default defineConfig({
-                                    plugins: [
-                                        react(),
-                                        tailwindcss()
-                                    ],
-                                    })
+bottom of installation tag you get a "using vite" named tag 
+Install Tailwind CSS  Terminal ->
+```bash
+npm install tailwindcss @tailwindcss/vite 
+```
+Configure the Vite plugin.
+open "vite.config.ts" file.
+replace with  -> 
+```bash
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+plugins: [
+    react(),
+    tailwindcss()
+],
+})
+```
 
 
-<br>
-import into css file (index.css) -> <br>
-     @import "tailwindcss"; <br>
+import into css file (index.css) -> 
+```bash
+     @import "tailwindcss"; 
+```
 
 now you can run-> <br> 
-    npm run dev <br>
+```bash
+    npm run dev 
+```
 
 
-<h1>💥 What are props?</h1>
-"props" is default name;
-Props(short for properties) are inputs you pass from a parent component to a child component in React.
-They let you send data,values or functions into components so they can behave dynamically.
+## 💥 What are props?
+# "props" is default name;
+- Props(short for properties) are inputs you pass from a parent component to a child component in React.
+- They let you send data,values or functions into components so they can behave dynamically.
 
-<h3>why do we use props</h3>
-<ul>
-    <li>To customize a component's behavior.</li>
-    <li>To reuse components with different data.</li>
-    <li>To communicate between parent -> child components</li>
-</ul>
+# why do we use props
 
-<h3>Important Points</h3>
-<ul>
-    <li>Props are read-only inside the child.</li>
-    <li>You can pass any type: sting, number, array, object, function.</li>
-    <li>props allow component reuse with different content</li>
-</ul>
-
-<br>
-<h1>naming convention into package.json file</h1>
-<b> The name field in your package.json file should ideally **not contain any uppercase letters**. The widely accepted convention for npm package names is to use: <br>
-
-Lowercase letters <br>
-Hyphens (-) or underscores (_) to separate words <br>
-No spaces</b>
-
-<br>
-<br>
-<h1>Comonents</h1>
- Components in React are reusable building blocks that control what you see in the UI.A component is a JavaScript function (or class) that returns React elements (JSX) to show something on the screen. <br>
- <h3>🛠️ Types of components</h3>
-<ul>
-
-<li>Functional components → most common today (function MyComponent()) </li> 
-<li>Class components → older style (class MyComponent extends React.Component)</li> 
-</ul>
-
-<h3>🔥 Why we use components: </h3> <br>
-✅ Reuse UI <br>
-✅ Keep code organized <br>
-✅ Split big apps into small, testable parts <br>
-✅ Pass data using props<br>
-✅ Manage internal state (with hooks like useState) <br>
-
-<b>a React component, start its name with an uppercase letter.</b>
+- To customize a component's behavior.
+- To reuse components with different data.
+- To communicate between parent -> child components
 
 
+# Important Points
 
-<h1>💥 What are React Hooks?</h1>
-Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. <br>
+- Props are read-only inside the child.
+- You can pass any type: sting, number, array, object, function.
+- props allow component reuse with different content
 
-They were introduced in React 16.8 to make functional components much more powerful. <br>
 
-it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
+## Naming convention into package.json file
 
-Some Hooks -> <br>
-✅ useState → Manages local component state. <br>
-✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). <br>
-✅ useContext → Shares and accesses global/context data across components. <br>
-✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. <br>
-✅ useMemo → Caches computed values to avoid recalculating on every render.<br>
-✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.<br>
-✅ useReducer → Handles complex state updates with a reducer pattern.<br>
+- The name field in your package.json file should ideally **not contain any uppercase letters**. The widely accepted convention for npm package names is to use: 
+
+- Lowercase letters.
+- Hyphens (-) or underscores (_) to separate words.
+- No spaces.
+
+## Comonents
+ Components in React are reusable building blocks that control what you see in the UI.A component is a JavaScript function (or class) that returns React elements (JSX) to show something on the screen.
+
+ # 🛠️ Types of components 
+
+
+- Functional components → most common today (function MyComponent())
+- Class components → older style (class MyComponent extends React.Component)
+
+
+## 🔥 Why we use components:
+- ✅ Reuse UI
+- ✅ Keep code organized <br>
+- ✅ Split big apps into small, testable parts <br>
+- ✅ Pass data using props<br>
+- ✅ Manage internal state (with hooks like useState) <br>
+
+- a React component, start its name with an uppercase letter.
+
+
+
+## 💥 What are React Hooks?
+- Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. 
+
+- They were introduced in React 16.8 to make functional components much more powerful. 
+
+- it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
+
+Some Hooks -> 
+- ✅ useState → Manages local component state.
+- ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
+- ✅ useContext → Shares and accesses global/context data across components. 
+- ✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. 
+- ✅ useMemo → Caches computed values to avoid recalculating on every render.
+- ✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.
+- ✅ useReducer → Handles complex state updates with a reducer pattern.
 
 
 # UseState
 - useState is a React Hook that lets you add state (data that can change) to a functional component.
 - const [state, setState] = useState(initialValue);
 - Every time you call setState, React:
-✅ updates the value
-✅ re-renders the component
-✅ useState lets you add and manage data (state) in React functional components.
-✅ Syntax → const [value, setValue] = useState(initialValue)
-✅ You update the value using setValue, and React re-renders the component.
-✅ Example → counter, form input, toggle, etc.
-✅ It replaces the need for state in class components.
+- updates the value
+- re-renders the component
+- useState lets you add and manage data (state) in React functional components.
+- Syntax → const [value, setValue] = useState(initialValue)
+- You update the value using setValue, and React re-renders the component.
+- Example → counter, form input, toggle, etc.
+- It replaces the need for state in class components.
