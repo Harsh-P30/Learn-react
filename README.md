@@ -292,7 +292,6 @@ They let you send data,values or functions into components so they can behave dy
 Lowercase letters <br>
 Hyphens (-) or underscores (_) to separate words <br>
 No spaces</b>
-<<<<<<< HEAD
 
 <br>
 <br>
@@ -313,5 +312,3 @@ No spaces</b>
 ✅ Manage internal state (with hooks like useState) <br>
 
 <b>a React component, start its name with an uppercase letter.</b>
-=======
->>>>>>> d9a995919bff9cabd8dc086e5640dab3f23a931f
