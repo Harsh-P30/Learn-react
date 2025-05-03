@@ -210,25 +210,7 @@ It was created by Evan You (the creator of Vue) and is now popular across React,
     package.json
     vite.config.js
 
-
-
-<h1>💥 What are React Hooks?</h1>
-Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. <br>
-
-They were introduced in React 16.8 to make functional components much more powerful. <br>
-
-it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
-
-Some Hooks -> <br>
-✅ useState → Manages local component state. <br>
-✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). <br>
-✅ useContext → Shares and accesses global/context data across components. <br>
-✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. <br>
-✅ useMemo → Caches computed values to avoid recalculating on every render.<br>
-✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.<br>
-✅ useReducer → Handles complex state updates with a reducer pattern.<br>
-
-
+ 
 
 <h1>Virtual DOM, Fibre and reconciliation</h1>
 reference -> https://github.com/acdlite/react-fiber-architecture
@@ -312,3 +294,34 @@ No spaces</b>
 ✅ Manage internal state (with hooks like useState) <br>
 
 <b>a React component, start its name with an uppercase letter.</b>
+
+
+
+<h1>💥 What are React Hooks?</h1>
+Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. <br>
+
+They were introduced in React 16.8 to make functional components much more powerful. <br>
+
+it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
+
+Some Hooks -> <br>
+✅ useState → Manages local component state. <br>
+✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). <br>
+✅ useContext → Shares and accesses global/context data across components. <br>
+✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. <br>
+✅ useMemo → Caches computed values to avoid recalculating on every render.<br>
+✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.<br>
+✅ useReducer → Handles complex state updates with a reducer pattern.<br>
+
+
+# UseState
+- useState is a React Hook that lets you add state (data that can change) to a functional component.
+- const [state, setState] = useState(initialValue);
+- Every time you call setState, React:
+✅ updates the value
+✅ re-renders the component
+✅ useState lets you add and manage data (state) in React functional components.
+✅ Syntax → const [value, setValue] = useState(initialValue)
+✅ You update the value using setValue, and React re-renders the component.
+✅ Example → counter, form input, toggle, etc.
+✅ It replaces the need for state in class components.
