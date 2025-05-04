@@ -395,7 +395,6 @@ useEffect(() => {   // Run only one time
   },[]) // [] -> dependencies
 ```
 **Usage**
-
 - Connecting to an external system.
 - Wrapping Effects in custom Hooks.
 - Controlling a non-React widget.
@@ -407,7 +406,27 @@ useEffect(() => {   // Run only one time
 - Reading the latest props and state from an Effect.
 - Displaying different content on the server and the client.
 
+## useRef hook
+- useRef is a React hook that gives you a persistent, mutable container whose .current value survives re-renders — but changing it does NOT trigger re-render.
+**It’s often used to:**
+- Keep a reference to a DOM element
+- Store mutable values across renders without causing re-renders
+- Track things like previous values or first render
+- Avoiding recreating the ref contents
 
+```bash
+const refContainer = useRef(initialValue);
+```
+- initialValue → the initial value you want to store (can be null, a number, a string, an object, etc.)
+- refContainer → an object that looks like { current: initialValue }
+
+**By using a ref, you ensure that:**
+- You can store information between re-renders (unlike regular variables, which reset on every render).
+- Changing it does not trigger a re-render (unlike state variables, which trigger a re-render).
+- The information is local to each copy of your component (unlike the variables outside, which are shared).
+**useRef returns an object with a single property:**
+
+- current: Initially, it’s set to the initialValue you have passed. You can later set it to something else. If you pass the ref object to React as a ref attribute to a JSX node, React will set its current property.
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 
