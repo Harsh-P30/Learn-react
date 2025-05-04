@@ -339,6 +339,13 @@ now you can run-> <br>
 
 - it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
 
+Before using any hooks please import that like
+  
+```bash
+import { useState, useEffect } from 'react';
+```
+
+
 Some Hooks -> 
 - ✅ useState → Manages local component state.
 - ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
@@ -374,3 +381,52 @@ function ImageGallery() {
 - You update the value using setValue, and React re-renders the component.
 - Example → counter, form input, toggle, etc.
 - It replaces the need for state in class components.
+
+## useEffect
+- useEffect is a React Hook that lets you synchronize a component with an external system.
+
+```bash
+useEffect(setup, dependencies?)
+```
+
+```bash
+useEffect(() => {   // Run only one time 
+    alert("Hey welcome");
+  },[]) // [] -> dependencies
+```
+**Usage**
+
+- Connecting to an external system.
+- Wrapping Effects in custom Hooks.
+- Controlling a non-React widget.
+- Fetching data with Effects.
+- Specifying reactive dependencies.
+- Updating state based on previous state from an Effect.
+- Removing unnecessary object dependencies.
+- Removing unnecessary function dependencies.
+- Reading the latest props and state from an Effect.
+- Displaying different content on the server and the client.
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+
+## Importants Points
+
+**<React.StrictMode :-** run code two times in developement first time to check and other in real.
+
+**Types of Hooks**
+
+- ✅ useState → Manages local component state.
+- ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
+- ✅ useContext → Shares and accesses global/context data across components. 
+- ✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. 
+- ✅ useMemo → Caches computed values to avoid recalculating on every render.
+- ✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.
+- ✅ useReducer → Handles complex state updates with a reducer pattern.
+
+**Virtual DOM, Fibre and reconciliation**
+```bash 
+ https://github.com/acdlite/react-fiber-architecture
+```
+
