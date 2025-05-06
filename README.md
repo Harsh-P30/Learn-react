@@ -601,8 +601,8 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 **Types of Hooks**
 
-- ✅ useState → Manages local component state.
-- ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
+## ✅ useState → Manages local component state.
+# ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
 - ✅ useContext → Shares and accesses global/context data across components. 
 - ✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. 
 - ✅ useMemo → Caches computed values to avoid recalculating on every render.
