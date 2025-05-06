@@ -1,6 +1,6 @@
 # Learn_react
 Learning react from beginning 
-## What is React
+# What is React
 
 - React is a JavaScript library to build dynamic and interactive user interfaces.
 - Developed by facebook in 2011. 
@@ -9,7 +9,7 @@ Learning react from beginning
 - React is based on Declarative programming. basically you define the target UI state and then react figures out how to reach that state. But in JavaScript you have to write code to reach that desired state and JavaScript is based on Imperative Programming.
 
 
-## React Cdn
+# React Cdn
 
 ```bash
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -20,7 +20,7 @@ Learning react from beginning
 
 
 
-## Babel
+# Babel
 Babel is a JavaScript compiler. it convert new JavaScript into older JavaScript so it can support in all the browser and also convert JSX into Js. 
 # Babel Cdn
 
@@ -36,7 +36,7 @@ add into your script type->
 ```
     Don't forget to use react cdn also
 
-# Babel by npm</h5>
+## Babel by npm</h5>
 
 ```bash
 https://youtu.be/_ze46JgZpd4?si=H2J0p-lEC938Wec2 
@@ -52,7 +52,7 @@ it is too heavy its download everything related to react
     npm run build // to build folder
 
 
-## Bundler
+# Bundler
 A bundler is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser. A fantastic feature of a bundler is that it generates a dependency graph as it traverses your first code files. This implies that beginning with the entry point you specified, the module bundler keeps track of both your source files’ dependencies and third-party dependencies. This dependency graph guarantees that all source and associated code files are kept up to date and error-free. .
 ✅ Combines all .js / .jsx files .
 ✅ Converts JSX to plain JS (via Babel) .
@@ -68,7 +68,7 @@ Set up bundler config (webpack.config.js, vite.config.js) .
 Add npm scripts .
 Run npm start or npm run build .
 
-# Types of bundler
+## Types of bundler
 
 # Webpack
 Webpack is a module bundler — it takes all your project files (JavaScript, CSS, images, fonts, etc.), processes them, and bundles them into one or more optimized files that browsers can understand.
@@ -79,7 +79,7 @@ Webpack is a module bundler — it takes all your project files (JavaScript, CSS
 ✅ Optimizes the final output (minifies, tree-shakes unused code)  .
 ✅ Provides a dev server with hot module reload (HMR)  .
 
-# 🔨 How does Webpack work?
+**🔨 How does Webpack work?**
 Webpack works with these core concepts:
 
 Entry
@@ -106,7 +106,7 @@ loaders: babel-loader (JSX + ES6 → JS), css-loader + style-loader (CSS import 
 plugins: HtmlWebpackPlugin (injects your bundle into HTML)
 
 
-# 💥 What is Parcel? 
+## 💥 What is Parcel? 
 
 Parcel is a zero-config bundler — it bundles your JavaScript, JSX, CSS, images, fonts, and more, with almost no manual configuration.
 
@@ -116,7 +116,7 @@ Parcel is a zero-config bundler — it bundles your JavaScript, JSX, CSS, images
 ✅ Automatic code splitting & optimization .
 ✅ Fast dev server + optimized production build .
 
-# 🔥 Why do React devs like Parcel?
+**🔥 Why do React devs like Parcel?**
 - It just works — you can start coding immediately.
 - You don’t need to install Babel or Webpack manually — Parcel detects JSX and transpiles it.
 - It handles assets automatically (images, CSS, fonts).
@@ -172,7 +172,7 @@ Behind the scenes, Parcel uses Babel to handle modern JavaScript and JSX/TSX syn
 
 
 
-# 💥 What is Vite? </h4>
+## 💥 What is Vite? </h4>
 
 Vite (pronounced like “vite” in French = “fast”) is a next-generation frontend build tool that gives you:
 
@@ -184,14 +184,14 @@ Vite (pronounced like “vite” in French = “fast”) is a next-generation fr
 
 It was created by Evan You (the creator of Vue) and is now popular across React, Vue, Svelte, and even Vanilla JS projects.
 
-# 🚀 Why React devs love Vite
+**🚀 Why React devs love Vite**
 - Instant dev server start → no matter how big your project
 - Fast HMR → save a file, and the update appears instantly in the browser
 - No config needed → React template works out of the box
 - Built-in JSX + TypeScript support → no Babel setup required
 - Optimized production builds → minified, tree-shaken, ready to deploy
 
-# How to set up React + Vite.
+**How to set up React + Vite.**
     Here’s your step-by-step:
 
 1️⃣ Create a new project
@@ -233,7 +233,7 @@ http://localhost:5173/
 
  
 
-## Virtual DOM, Fibre and reconciliation</h1>
+# Virtual DOM, Fibre and reconciliation</h1>
 
 reference ->
 ```bash 
@@ -242,7 +242,7 @@ reference ->
 
 
 
-## TailwindCss 4.0 in Vite
+# TailwindCss 4.0 in Vite
 
 create react app by vite.
 go to -> 
@@ -284,8 +284,8 @@ now you can run-> <br>
 ```
 
 
-## 💥 What are props?
-# "props" is default name;
+# 💥 What are props?
+## "props" is default name;
 - Props(short for properties) are inputs you pass from a parent component to a child component in React.
 - They let you send data,values or functions into components so they can behave dynamically.
 - Props are like arguments you pass to a function. They let a parent component pass data to a child component and customize its appearance. For example, a Form can pass a color prop to a Button
@@ -306,7 +306,7 @@ now you can run-> <br>
 
 
 
-## Naming convention into package.json file
+# Naming convention into package.json file
 
 - The name field in your package.json file should ideally **not contain any uppercase letters**. The widely accepted convention for npm package names is to use: 
 
@@ -314,11 +314,10 @@ now you can run-> <br>
 - Hyphens (-) or underscores (_) to separate words.
 - No spaces.
 
-## Comonents
+# Comonents
  Components in React are reusable building blocks that control what you see in the UI.A component is a JavaScript function (or class) that returns React elements (JSX) to show something on the screen.
 
- # 🛠️ Types of components 
-
+## 🛠️ Types of components 
 
 - Functional components → most common today (function MyComponent())
 - Class components → older style (class MyComponent extends React.Component)
@@ -331,12 +330,12 @@ now you can run-> <br>
 - ✅ Pass data using props<br>
 - ✅ Manage internal state (with hooks like useState) <br>
 
-## What is state.
+# What is state.
 - a React component, start its name with an uppercase letter.
 **To make the UI interactive, you need to let users change your underlying data model. You will use state for this.**
 *Think of state as the minimal set of changing data that your app needs to remember. The most important principle for structuring state is to keep it DRY (Don’t Repeat Yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else on-demand.*
 
-# State: A Component's Memor
+## State: A Component's Memor
 **Components often need to change what’s on the screen as a result of an interaction. Typing into the form should update the input field, clicking “next” on an image carousel should change which image is displayed, clicking “buy” should put a product in the shopping cart. Components need to “remember” things: the current input value, the current image, the shopping cart. In React, this kind of component-specific memory is called state.**
 *State is local to a component instance on the screen. In other words, if you render the same component twice, each copy will have completely isolated state! Changing one of them will not affect the other.*
 
@@ -348,7 +347,7 @@ now you can run-> <br>
 - You can have more than one state variable. Internally, React matches them up by their order.
 - State is private to the component. If you render it in two places, each copy gets its own state.
 
-## 💥 What are React Hooks?
+# 💥 What are React Hooks?
 - Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. 
 
 - They were introduced in React 16.8 to make functional components much more powerful. 
@@ -372,7 +371,7 @@ Some Hooks ->
 - ✅ useReducer → Handles complex state updates with a reducer pattern.
 
 
-# UseState
+## UseState
 - useState is a React Hook that lets you add state (data that can change) to a **functional component**.
 - 
 - State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
@@ -398,7 +397,7 @@ function ImageGallery() {
 - Example → counter, form input, toggle, etc.
 - It replaces the need for state in class components.
 
-# useEffect
+## useEffect
 - useEffect is a React Hook that lets you synchronize a component with an external system.
 
 ```bash
@@ -446,7 +445,7 @@ const refContainer = useRef(initialValue);
 
 
 
-## Conditional rendering
+# Conditional rendering
 In React, there is no special syntax for writing conditions. Instead, you’ll use the same techniques as you use when writing regular JavaScript code. For example, you can use an if statement to conditionally include JSX:
 ```bash
 let content;
@@ -481,7 +480,7 @@ return (
 <b>a React component, start its name with an uppercase letter.</b>
 
 
-## component lifecycle in Class Method
+# component lifecycle in Class Method
 - In React, components have a lifecycle that consists of different phases. Each phase has a set of lifecycle methods that are called at specific points in the component's lifecycle. These methods allow you to control the component's behavior and perform specific actions at different stages of its lifecycle.
 - In React, a component's lifecycle consists of three main phases: **mounting, updating, and unmounting**. These phases allow developers to run specific code at key moments, such as when the component is created, updated, or removed.
   
@@ -490,10 +489,10 @@ https://www.freecodecamp.org/news/react-component-lifecycle-methods/
 ```
 
 
-# Component Mounting Phase
+## Component Mounting Phase
 - The mounting phase refers to the period when a component is being created and inserted into the DOM.
 - During this phase, several lifecycle methods are invoked by React to enable the developer to configure the component, set up any necessary state or event listeners, and perform other initialization tasks.
-# The mounting phase has three main lifecycle methods that are called in order: constructor(), render(), componentDidMount()
+## The mounting phase has three main lifecycle methods that are called in order: constructor(), render(), componentDidMount()
 
 **The constructor() lifecycle method**
 **constructor() → setup state, bind methods**
@@ -530,7 +529,7 @@ render() {
 **componentDidMount() → runs once after render → good for API calls**
 The componentDidMount() method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.
 
-# Component Updating Phase
+## Component Updating Phase
 This phase occurs when a component's props or state changes, and the component needs to be updated in the DOM.
 **shouldComponentUpdate() → controls re-render (default: true)**
 **The shouldComponentUpdate() lifecycle method**
@@ -544,7 +543,7 @@ The shouldComponentUpdate() method is called before a component is updated. It t
 **The componentDidUpdate lifecycle method**
 The componentDidUpdate() method is a lifecycle method in React that is called after a component has been updated and re-rendered. It is useful for performing side effects or additional operations when the component's props or state have changed.
 
-# Component Unmounting Phase
+## Component Unmounting Phase
 
 - The unmounting phase refers to the lifecycle stage when a component is being removed from the DOM (Document Object Model) and is no longer rendered or accessible.
 
@@ -559,23 +558,23 @@ The componentDidUpdate() method is a lifecycle method in React that is called af
 - After componentWillUnmount() is called, the component is removed from the DOM and all of its state and props are destroyed.
 
 
-## ⚛️ React Functional Component Lifecycle (with useEffect)
+# ⚛️ React Functional Component Lifecycle (with useEffect)
 
-# ✅ Mounting (component is added to DOM)
+## ✅ Mounting (component is added to DOM)
 - → Runs only once on initial render
 ```bash
 useEffect(() => {
   console.log("Component mounted");
 }, []);
 ```
-# ✅ Updating (state or props change)
+## ✅ Updating (state or props change)
 - → Runs every time the specified dependencies change
 ```bash
 useEffect(() => {
   console.log("Count updated");
 }, [count]);
 ```
-# ✅ Unmounting (component is removed from DOM)
+## ✅ Unmounting (component is removed from DOM)
 - → Cleanup function runs before unmount
 ```bash
 useEffect(() => {
@@ -595,7 +594,7 @@ useEffect(() => {
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 
-## Importants Points
+# Importants Points
 
 **<React.StrictMode>** run code two times in developement first time to check and other in real.
 
@@ -613,12 +612,11 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 ```bash 
  https://github.com/acdlite/react-fiber-architecture
 ```
-# React uses one-way data flow
+## React uses one-way data flow
+## Props are a way of passing data from parent to child.
+## State is reserved only for interactivity, that is, data that changes over time.
 
-# Props are a way of passing data from parent to child.
-# State is reserved only for interactivity, that is, data that changes over time.
-
-## Props vs State
+# Props vs State
 **Props** are used to pass data from parent component to a child component ensuring a unidirectional data flow of information.They are immutable and cann't be modify by the component that receives them.
 **State** is used to manage data within a component. it is mutable and can updated using setState method. Changes in state trigger a re-render of component where the state is modified.
 
