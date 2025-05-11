@@ -347,6 +347,28 @@ now you can run-> <br>
 - You can have more than one state variable. Internally, React matches them up by their order.
 - State is private to the component. If you render it in two places, each copy gets its own state.
 
+# Event in React 
+**an event is an action or occurrence that happens in the browser, which you can respond to.**
+Basically it is a action perform by user and our code base tackel that action and react according to that.
+like click dark mode button and the whole page became dark theme.
+Examples of Events: <br>
+- Clicking a button → onClick
+- Typing in an input → onChange
+- Hovering over an element → onMouseOver
+- Submitting a form → onSubmit
+- Pressing a key → onKeyDown
+  
+```bash
+function App() {
+  const handleClick = () => {
+    alert("Button was clicked!");
+  }
+  return <button onClick={handleClick}>Click me</button>
+}
+
+```
+
+
 # 💥 What are React Hooks?
 - Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. 
 

@@ -34,7 +34,7 @@ function App() {
       {/* 
       <input type="text" name="" id="" value={text} onChange={handelChange} />   */}
 
-      <input type="text" name="name" id="" value={form.name} onChange={handelForm} placeholder='Enter Name' />
+      <input type="text" name="name" id="" value={form.name} onChange={handelForm} placeholder='Enter Name' /> {/*onClick is a example of Event*/}
 
       <input type="number" name="ph" id="" value={form.ph} onChange={handelForm} placeholder='Enter Ph no'/>
 
