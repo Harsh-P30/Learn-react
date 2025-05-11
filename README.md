@@ -54,30 +54,30 @@ it is too heavy its download everything related to react
 
 # Bundler
 A bundler is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser. A fantastic feature of a bundler is that it generates a dependency graph as it traverses your first code files. This implies that beginning with the entry point you specified, the module bundler keeps track of both your source files’ dependencies and third-party dependencies. This dependency graph guarantees that all source and associated code files are kept up to date and error-free. .
-✅ Combines all .js / .jsx files .
-✅ Converts JSX to plain JS (via Babel) .
-✅ Transpiles modern JS (ES6+) to older JS (for browser support) .
-✅ Optimizes (minifies) code for production .
-✅ Optionally processes CSS, images, fonts, etc. 
-✅ Steps to use a bundler.
-
-Choose one (Webpack, Vite, Parcel, etc.).
-Install it + its loaders/plugins .
-Set up babel.config.js or .babelrc
-Set up bundler config (webpack.config.js, vite.config.js) .
-Add npm scripts .
-Run npm start or npm run build .
+- Combines all .js / .jsx files .
+- Converts JSX to plain JS (via Babel) .
+- Transpiles modern JS (ES6+) to older JS (for browser support) .
+- Optimizes (minifies) code for production .
+- Optionally processes CSS, images, fonts, etc. 
+  
+**Steps to use a bundler.**
+- Choose one (Webpack, Vite, Parcel, etc.).
+- Install it + its loaders/plugins .
+- Set up babel.config.js or .babelrc
+- Set up bundler config (webpack.config.js, vite.config.js) .
+- Add npm scripts .
+- Run npm start or npm run build .
 
 ## Types of bundler
 
 ## Webpack
 Webpack is a module bundler — it takes all your project files (JavaScript, CSS, images, fonts, etc.), processes them, and bundles them into one or more optimized files that browsers can understand.
 
-✅ Combines (bundles) your JS, CSS, images  .
-✅ Transforms JSX → JS (via Babel)   .
-✅ Transpiles ES6+ → ES5 (for browser support)   .
-✅ Optimizes the final output (minifies, tree-shakes unused code)  .
-✅ Provides a dev server with hot module reload (HMR)  .
+- Combines (bundles) your JS, CSS, images  .
+- Transforms JSX → JS (via Babel)   .
+- Transpiles ES6+ → ES5 (for browser support)   .
+- Optimizes the final output (minifies, tree-shakes unused code)  .
+- Provides a dev server with hot module reload (HMR)  .
 
 **🔨 How does Webpack work?**
 Webpack works with these core concepts:
@@ -99,22 +99,22 @@ Example: HtmlWebpackPlugin, CleanWebpackPlugin.
 Mode
 → Either development (with source maps, no minification) or production (minified, optimized).
 
-📦 Typical React + Webpack setup
-entry: ./src/index.js
-output: ./dist/bundle.js
-loaders: babel-loader (JSX + ES6 → JS), css-loader + style-loader (CSS import support)
-plugins: HtmlWebpackPlugin (injects your bundle into HTML)
+📦 Typical React + Webpack setup:- 
+- entry: ./src/index.js
+- output: ./dist/bundle.js
+- loaders: babel-loader (JSX + ES6 → JS), css-loader + style-loader (CSS import support)
+- plugins: HtmlWebpackPlugin (injects your bundle into HTML)
 
 
 ## 💥 What is Parcel? 
 
 Parcel is a zero-config bundler — it bundles your JavaScript, JSX, CSS, images, fonts, and more, with almost no manual configuration.
 
-✅ Zero config → no need for webpack.config.js .
-✅ Built-in Babel, TypeScript, PostCSS support .
-✅ Hot Module Replacement (HMR) → updates the browser without full reload .
-✅ Automatic code splitting & optimization .
-✅ Fast dev server + optimized production build .
+- Zero config → no need for webpack.config.js .
+- Built-in Babel, TypeScript, PostCSS support .
+- Hot Module Replacement (HMR) → updates the browser without full reload .
+- Automatic code splitting & optimization .
+- Fast dev server + optimized production build .
 
 **🔥 Why do React devs like Parcel?**
 - It just works — you can start coding immediately.
@@ -176,11 +176,11 @@ Behind the scenes, Parcel uses Babel to handle modern JavaScript and JSX/TSX syn
 
 Vite (pronounced like “vite” in French = “fast”) is a next-generation frontend build tool that gives you:
 
-✅ ultra-fast dev server (instant startup).
-✅ lightning-fast hot module replacement (HMR).
-✅ ES module–based architecture.
-✅ out-of-the-box React + JSX support.
-✅ optimized production builds (using Rollup under the hood).
+- ultra-fast dev server (instant startup).
+- lightning-fast hot module replacement (HMR).
+- ES module–based architecture.
+- out-of-the-box React + JSX support.
+- optimized production builds (using Rollup under the hood).
 
 It was created by Evan You (the creator of Vue) and is now popular across React, Vue, Svelte, and even Vanilla JS projects.
 
@@ -250,15 +250,15 @@ go to ->
 https://tailwindcss.com/docs/installation/using-vite 
 ```
 
-bottom of installation tag you get a "using vite" named tag 
+bottom of installation tag you get a "using vite" named tag.   
 Install Tailwind CSS  Terminal ->
 ```bash
 npm install tailwindcss @tailwindcss/vite 
 ```
-Configure the Vite plugin.
-open "vite.config.ts" file.
-replace with  -> 
-```bash
+Configure the Vite plugin.  
+open "vite.config.ts" file.  
+replace with  ->   
+```bash  
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
@@ -294,11 +294,11 @@ now you can run-> <br>
 
 
 ## 🔥 Why we use components:
-- ✅ Reuse UI
-- ✅ Keep code organized <br>
-- ✅ Split big apps into small, testable parts <br>
-- ✅ Pass data using props<br>
-- ✅ Manage internal state (with hooks like useState) <br>
+- Reuse UI
+- Keep code organized <br>
+- Split big apps into small, testable parts <br>
+- Pass data using props<br>
+- Manage internal state (with hooks like useState) <br>
 
 
 
@@ -311,12 +311,13 @@ now you can run-> <br>
 <li>Class components → older style (class MyComponent extends React.Component)</li> 
 </ul>
 
-<h3>🔥 Why we use components: </h3> <br>
-✅ Reuse UI <br>
-✅ Keep code organized <br>
-✅ Split big apps into small, testable parts <br>
-✅ Pass data using props<br>
-✅ Manage internal state (with hooks like useState) <br>
+<h3>🔥 Why we use components: </h3>
+
+- Reuse UI.  
+- Keep code organized.  
+- Split big apps into small, testable parts . 
+- Pass data using props. 
+- Manage internal state (with hooks like useState) . 
 
 <b>a React component, start its name with an uppercase letter.</b>
 
@@ -337,8 +338,10 @@ https://www.freecodecamp.org/news/react-component-lifecycle-methods/
 
 **The constructor() lifecycle method**
 **constructor() → setup state, bind methods**
-The constructor() method is called when the component is first created. You use it to initialize the component's state and bind methods to the component's instance. 
-syntax of creating constructor
+The constructor() method is called when the component is first created. You use it to initialize the component's state and bind methods to the component's instance.  
+
+syntax of creating constructor.  
+
 ```bash
 class Counter extends Component {
   constructor(props) {
@@ -354,7 +357,8 @@ class Counter extends Component {
 
 **The render() lifecycle method**
 **render() → returns JSX**
-The render() method is responsible for generating the component's virtual DOM representation based on its current props and state. It is called every time the component needs to be re-rendered, either because its props or state have changed, or because a parent component has been re-rendered.
+The render() method is responsible for generating the component's virtual DOM representation based on its current props and state. It is called every time the component needs to be re-rendered, either because its props or state have changed, or because a parent component has been re-rendered.  
+
 ```bash
 render() {
     return (
@@ -368,13 +372,14 @@ render() {
 ```
 **The componentDidMount() lifecycle method**
 **componentDidMount() → runs once after render → good for API calls**
-The componentDidMount() method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.
+The componentDidMount() method is called once the component has been mounted into the DOM. It is typically used to set up any necessary event listeners or timers, perform any necessary API calls or data fetching, and perform other initialization tasks that require access to the browser's DOM API.  
+
 
 ## Component Updating Phase
 This phase occurs when a component's props or state changes, and the component needs to be updated in the DOM.
 **shouldComponentUpdate() → controls re-render (default: true)**
 **The shouldComponentUpdate() lifecycle method**
-The shouldComponentUpdate() method is called before a component is updated. It takes two arguments: nextProps and nextState. This method returns a boolean value that determines whether the component should update or not. If this method returns true, the component will update, and if it returns false, the component will not update.
+The shouldComponentUpdate() method is called before a component is updated. It takes two arguments: nextProps and nextState. This method returns a boolean value that determines whether the component should update or not. If this method returns true, the component will update, and if it returns false, the component will not update.  
 
 **The componentWillUpdate() lifecycle method**
 - componentWillUpdate() is a lifecycle method in React that gets called just before a component's update cycle starts. It receives the next prop and state as arguments and allows you to perform any necessary actions before the component updates.
@@ -473,10 +478,14 @@ useEffect(() => {
 - State is private to the component. If you render it in two places, each copy gets its own state.
 
 # Event in React 
-**an event is an action or occurrence that happens in the browser, which you can respond to.**
-Basically it is a action perform by user and our code base tackel that action and react according to that.
-like click dark mode button and the whole page became dark theme.
-Examples of Events: <br>
+**an event is an action or occurrence that happens in the browser, which you can respond to.**  
+
+Basically it is a action perform by user and our code base tackel that action and react according to that.  
+
+like click dark mode button and the whole page became dark theme.  
+
+Examples of Events:  
+
 - Clicking a button → onClick
 - Typing in an input → onChange
 - Hovering over an element → onMouseOver
@@ -525,18 +534,18 @@ import { useState, useEffect } from 'react';
 
 
 Some Hooks -> 
-- ✅ useState → Manages local component state.
-- ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
-- ✅ useContext → Shares and accesses global/context data across components. 
-- ✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. 
-- ✅ useMemo → Caches computed values to avoid recalculating on every render.
-- ✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.
-- ✅ useReducer → Handles complex state updates with a reducer pattern.
+- useState → Manages local component state.
+- useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
+- useContext → Shares and accesses global/context data across components. 
+- useRef → Holds a reference to a DOM element or stores persistent mutable values. 
+- useMemo → Caches computed values to avoid recalculating on every render.
+- useCallback → Caches functions to prevent unnecessary re-creations on each render.
+- useReducer → Handles complex state updates with a reducer pattern.
 
 
 ## UseState
 - useState is a React Hook that lets you add state (data that can change) to a **functional component**.
-- 
+  
 - State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
 
 - To add state to a component, use one of these Hooks:
