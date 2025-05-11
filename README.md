@@ -1,6 +1,7 @@
-# Learn_react
-Learning react from beginning 
-# What is React
+# React Introduction. 
+Learning react from beginning. 
+
+## What is React
 
 - React is a JavaScript library to build dynamic and interactive user interfaces.
 - Developed by facebook in 2011. 
@@ -8,8 +9,7 @@ Learning react from beginning
 - Used to create single page website. 
 - React is based on Declarative programming. basically you define the target UI state and then react figures out how to reach that state. But in JavaScript you have to write code to reach that desired state and JavaScript is based on Imperative Programming.
 
-
-# React Cdn
+## React Cdn
 
 ```bash
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -18,11 +18,10 @@ Learning react from beginning
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 ```
 
-
-
-# Babel
+## Babel
 Babel is a JavaScript compiler. it convert new JavaScript into older JavaScript so it can support in all the browser and also convert JSX into Js. 
-# Babel Cdn
+
+## Babel Cdn
 
 ```bash
     <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
@@ -41,15 +40,16 @@ add into your script type->
 ```bash
 https://youtu.be/_ze46JgZpd4?si=H2J0p-lEC938Wec2 
 https://youtu.be/zVWKtnEm4fk?si=0HdZOZvjK6G6XnB7
+
 ```
 
 
 <h1>Create react by using create-react-app</h1>
 it is too heavy its download everything related to react
-    npx create-react-app <app-name>
-    cd <app-name>
-    npm run start
-    npm run build // to build folder
+- npx create-react-app <app-name>
+- cd <app-name>
+- npm run start
+- npm run build // to build folder
 
 
 # Bundler
@@ -70,7 +70,7 @@ Run npm start or npm run build .
 
 ## Types of bundler
 
-# Webpack
+## Webpack
 Webpack is a module bundler — it takes all your project files (JavaScript, CSS, images, fonts, etc.), processes them, and bundles them into one or more optimized files that browsers can understand.
 
 ✅ Combines (bundles) your JS, CSS, images  .
@@ -284,37 +284,7 @@ now you can run-> <br>
 ```
 
 
-# 💥 What are props?
-## "props" is default name;
-- Props(short for properties) are inputs you pass from a parent component to a child component in React.
-- They let you send data,values or functions into components so they can behave dynamically.
-- Props are like arguments you pass to a function. They let a parent component pass data to a child component and customize its appearance. For example, a Form can pass a color prop to a Button
-  
-
-**why do we use props**
-
-- To customize a component's behavior.
-- To reuse components with different data.
-- To communicate between parent -> child components
-
-
-**Important Points**
-
-- Props are read-only inside the child.
-- You can pass any type: sting, number, array, object, function.
-- props allow component reuse with different content
-
-
-
-# Naming convention into package.json file
-
-- The name field in your package.json file should ideally **not contain any uppercase letters**. The widely accepted convention for npm package names is to use: 
-
-- Lowercase letters.
-- Hyphens (-) or underscores (_) to separate words.
-- No spaces.
-
-# Comonents
+# Components
  Components in React are reusable building blocks that control what you see in the UI.A component is a JavaScript function (or class) that returns React elements (JSX) to show something on the screen.
 
 ## 🛠️ Types of components 
@@ -330,158 +300,7 @@ now you can run-> <br>
 - ✅ Pass data using props<br>
 - ✅ Manage internal state (with hooks like useState) <br>
 
-# What is state.
-- a React component, start its name with an uppercase letter.
-**To make the UI interactive, you need to let users change your underlying data model. You will use state for this.**
-*Think of state as the minimal set of changing data that your app needs to remember. The most important principle for structuring state is to keep it DRY (Don’t Repeat Yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else on-demand.*
 
-## State: A Component's Memor
-**Components often need to change what’s on the screen as a result of an interaction. Typing into the form should update the input field, clicking “next” on an image carousel should change which image is displayed, clicking “buy” should put a product in the shopping cart. Components need to “remember” things: the current input value, the current image, the shopping cart. In React, this kind of component-specific memory is called state.**
-*State is local to a component instance on the screen. In other words, if you render the same component twice, each copy will have completely isolated state! Changing one of them will not affect the other.*
-
-- Use a state variable when a component needs to “remember” some information between renders.
-- State variables are declared by calling the useState Hook.
-- Hooks are special functions that start with use. They let you “hook into” React features like state.
-- Hooks might remind you of imports: they need to be called unconditionally. Calling Hooks, including useState, is only valid at the top level of a component or another Hook.
-- The useState Hook returns a pair of values: the current state and the function to update it.
-- You can have more than one state variable. Internally, React matches them up by their order.
-- State is private to the component. If you render it in two places, each copy gets its own state.
-
-# Event in React 
-**an event is an action or occurrence that happens in the browser, which you can respond to.**
-Basically it is a action perform by user and our code base tackel that action and react according to that.
-like click dark mode button and the whole page became dark theme.
-Examples of Events: <br>
-- Clicking a button → onClick
-- Typing in an input → onChange
-- Hovering over an element → onMouseOver
-- Submitting a form → onSubmit
-- Pressing a key → onKeyDown
-  
-```bash
-function App() {
-  const handleClick = () => {
-    alert("Button was clicked!");
-  }
-  return <button onClick={handleClick}>Click me</button>
-}
-
-```
-
-
-# 💥 What are React Hooks?
-- Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. 
-
-- They were introduced in React 16.8 to make functional components much more powerful. 
-
-- it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
-
-Before using any hooks please import that like
-  
-```bash
-import { useState, useEffect } from 'react';
-```
-
-
-Some Hooks -> 
-- ✅ useState → Manages local component state.
-- ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
-- ✅ useContext → Shares and accesses global/context data across components. 
-- ✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. 
-- ✅ useMemo → Caches computed values to avoid recalculating on every render.
-- ✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.
-- ✅ useReducer → Handles complex state updates with a reducer pattern.
-
-
-## UseState
-- useState is a React Hook that lets you add state (data that can change) to a **functional component**.
-- 
-- State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
-
-- To add state to a component, use one of these Hooks:
-
-- useState declares a state variable that you can update directly.
-- useReducer declares a state variable with the update logic inside a reducer function.
-
-```bash
-function ImageGallery() {
-  const [index, setIndex] = useState(0);
-  // ...
-```
-
-- const [state, setState] = useState(initialValue);
-- Every time you call setState, React:
-- updates the value
-- re-renders the component
-- useState lets you add and manage data (state) in React functional components.
-- Syntax → const [value, setValue] = useState(initialValue)
-- You update the value using setValue, and React re-renders the component.
-- Example → counter, form input, toggle, etc.
-- It replaces the need for state in class components.
-
-## useEffect
-- useEffect is a React Hook that lets you synchronize a component with an external system.
-
-```bash
-useEffect(setup, dependencies?)
-```
-
-```bash
-useEffect(() => {   // Run only one time 
-    alert("Hey welcome");
-  },[]) // [] -> dependencies
-```
-**Usage**
-- Connecting to an external system.
-- Wrapping Effects in custom Hooks.
-- Controlling a non-React widget.
-- Fetching data with Effects.
-- Specifying reactive dependencies.
-- Updating state based on previous state from an Effect.
-- Removing unnecessary object dependencies.
-- Removing unnecessary function dependencies.
-- Reading the latest props and state from an Effect.
-- Displaying different content on the server and the client.
-
-## useRef hook
-- useRef is a React hook that gives you a persistent, mutable container whose .current value survives re-renders — but changing it does NOT trigger re-render.
-**It’s often used to:**
-- Keep a reference to a DOM element
-- Store mutable values across renders without causing re-renders
-- Track things like previous values or first render
-- Avoiding recreating the ref contents
-
-```bash
-const refContainer = useRef(initialValue);
-```
-- initialValue → the initial value you want to store (can be null, a number, a string, an object, etc.)
-- refContainer → an object that looks like { current: initialValue }
-
-**By using a ref, you ensure that:**
-- You can store information between re-renders (unlike regular variables, which reset on every render).
-- Changing it does not trigger a re-render (unlike state variables, which trigger a re-render).
-- The information is local to each copy of your component (unlike the variables outside, which are shared).
-**useRef returns an object with a single property:**
-
-- current: Initially, it’s set to the initialValue you have passed. You can later set it to something else. If you pass the ref object to React as a ref attribute to a JSX node, React will set its current property.
-
-
-
-# Conditional rendering
-In React, there is no special syntax for writing conditions. Instead, you’ll use the same techniques as you use when writing regular JavaScript code. For example, you can use an if statement to conditionally include JSX:
-```bash
-let content;
-if (isLoggedIn) {
-  content = <AdminPanel />;
-} else {
-  content = <LoginForm />;
-}
-return (
-  <div>
-    {content}
-  </div>
-);
-```
 
 <h1>Comonents</h1>
  Components in React are reusable building blocks that control what you see in the UI.A component is a JavaScript function (or class) that returns React elements (JSX) to show something on the screen. <br>
@@ -605,14 +424,201 @@ useEffect(() => {
   };
 }, []);
 ```
+
+# 💥 What are props?
+## "props" is default name;
+- Props(short for properties) are inputs you pass from a parent component to a child component in React.
+- They let you send data,values or functions into components so they can behave dynamically.
+- Props are like arguments you pass to a function. They let a parent component pass data to a child component and customize its appearance. For example, a Form can pass a color prop to a Button
+  
+
+**why do we use props**
+
+- To customize a component's behavior.
+- To reuse components with different data.
+- To communicate between parent -> child components
+
+
+**Important Points**
+
+- Props are read-only inside the child.
+- You can pass any type: sting, number, array, object, function.
+- props allow component reuse with different content
+
+
+
+# Naming convention into package.json file
+
+- The name field in your package.json file should ideally **not contain any uppercase letters**. The widely accepted convention for npm package names is to use: 
+
+- Lowercase letters.
+- Hyphens (-) or underscores (_) to separate words.
+- No spaces.
+
+# What is state.
+- a React component, start its name with an uppercase letter.
+**To make the UI interactive, you need to let users change your underlying data model. You will use state for this.**
+*Think of state as the minimal set of changing data that your app needs to remember. The most important principle for structuring state is to keep it DRY (Don’t Repeat Yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else on-demand.*
+
+## State: A Component's Memor
+**Components often need to change what’s on the screen as a result of an interaction. Typing into the form should update the input field, clicking “next” on an image carousel should change which image is displayed, clicking “buy” should put a product in the shopping cart. Components need to “remember” things: the current input value, the current image, the shopping cart. In React, this kind of component-specific memory is called state.**
+*State is local to a component instance on the screen. In other words, if you render the same component twice, each copy will have completely isolated state! Changing one of them will not affect the other.*
+
+- Use a state variable when a component needs to “remember” some information between renders.
+- State variables are declared by calling the useState Hook.
+- Hooks are special functions that start with use. They let you “hook into” React features like state.
+- Hooks might remind you of imports: they need to be called unconditionally. Calling Hooks, including useState, is only valid at the top level of a component or another Hook.
+- The useState Hook returns a pair of values: the current state and the function to update it.
+- You can have more than one state variable. Internally, React matches them up by their order.
+- State is private to the component. If you render it in two places, each copy gets its own state.
+
+# Event in React 
+**an event is an action or occurrence that happens in the browser, which you can respond to.**
+Basically it is a action perform by user and our code base tackel that action and react according to that.
+like click dark mode button and the whole page became dark theme.
+Examples of Events: <br>
+- Clicking a button → onClick
+- Typing in an input → onChange
+- Hovering over an element → onMouseOver
+- Submitting a form → onSubmit
+- Pressing a key → onKeyDown
+  
+```bash
+function App() {
+  const handleClick = () => {
+    alert("Button was clicked!");
+  }
+  return <button onClick={handleClick}>Click me</button>
+}
+
+```
+
+# Conditional rendering
+In React, there is no special syntax for writing conditions. Instead, you’ll use the same techniques as you use when writing regular JavaScript code. For example, you can use an if statement to conditionally include JSX:
+
+```bash
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+return (
+  <div>
+    {content}
+  </div>
+);
+```
+
+# 💥 What are React Hooks?
+- Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. 
+
+- They were introduced in React 16.8 to make functional components much more powerful. 
+
+- it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
+
+Before using any hooks please import that like
+  
+```bash
+import { useState, useEffect } from 'react';
+```
+
+
+Some Hooks -> 
+- ✅ useState → Manages local component state.
+- ✅ useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
+- ✅ useContext → Shares and accesses global/context data across components. 
+- ✅ useRef → Holds a reference to a DOM element or stores persistent mutable values. 
+- ✅ useMemo → Caches computed values to avoid recalculating on every render.
+- ✅ useCallback → Caches functions to prevent unnecessary re-creations on each render.
+- ✅ useReducer → Handles complex state updates with a reducer pattern.
+
+
+## UseState
+- useState is a React Hook that lets you add state (data that can change) to a **functional component**.
+- 
+- State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
+
+- To add state to a component, use one of these Hooks:
+
+- useState declares a state variable that you can update directly.
+- useReducer declares a state variable with the update logic inside a reducer function.
+
+```bash
+function ImageGallery() {
+  const [index, setIndex] = useState(0);
+  // ...
+```
+
+- const [state, setState] = useState(initialValue);
+- Every time you call setState, React:
+- updates the value
+- re-renders the component
+- useState lets you add and manage data (state) in React functional components.
+- Syntax → const [value, setValue] = useState(initialValue)
+- You update the value using setValue, and React re-renders the component.
+- Example → counter, form input, toggle, etc.
+- It replaces the need for state in class components.
+
+## useEffect
+- useEffect is a React Hook that lets you synchronize a component with an external system.
+
+```bash
+useEffect(setup, dependencies?)
+```
+
+```bash
+useEffect(() => {   // Run only one time 
+    alert("Hey welcome");
+  },[]) // [] -> dependencies
+```
 **📌 Rules of useEffect**
 - Runs after the render is committed to the DOM.
 - Can have multiple useEffect hooks in one component.
 - Use the cleanup function to clear timers, subscriptions, event listeners, etc.
 - Provide a dependency array ([]) to control when it runs.
+  
+
+**Usage**
+- Connecting to an external system.
+- Wrapping Effects in custom Hooks.
+- Controlling a non-React widget.
+- Fetching data with Effects.
+- Specifying reactive dependencies.
+- Updating state based on previous state from an Effect.
+- Removing unnecessary object dependencies.
+- Removing unnecessary function dependencies.
+- Reading the latest props and state from an Effect.
+- Displaying different content on the server and the client.
 
 
-# 📋 1. What is a list in React?
+
+
+## useRef hook
+- useRef is a React hook that gives you a persistent, mutable container whose .current value survives re-renders — but changing it does NOT trigger re-render.
+**It’s often used to:**
+- Keep a reference to a DOM element
+- Store mutable values across renders without causing re-renders
+- Track things like previous values or first render
+- Avoiding recreating the ref contents
+
+```bash
+const refContainer = useRef(initialValue);
+```
+- initialValue → the initial value you want to store (can be null, a number, a string, an object, etc.)
+- refContainer → an object that looks like { current: initialValue }
+
+**By using a ref, you ensure that:**
+- You can store information between re-renders (unlike regular variables, which reset on every render).
+- Changing it does not trigger a re-render (unlike state variables, which trigger a re-render).
+- The information is local to each copy of your component (unlike the variables outside, which are shared).
+**useRef returns an object with a single property:**
+
+- current: Initially, it’s set to the initialValue you have passed. You can later set it to something else. If you pass the ref object to React as a ref attribute to a JSX node, React will set its current property.
+
+
+
+# 📋 1. What is a list and keys in React?
 In React, a list is just when you render multiple elements/components dynamically using an array.
 
 ```bash
@@ -630,7 +636,7 @@ return (
 -  We map over an array to create a list of JSX elements.
 -  Each item becomes an <li> inside the <ul>.
 
-# 🔑 2. What are keys?
+## 🔑 2. What are keys?
 A key is a special attribute you must add when rendering lists.
 
 ```bash
@@ -639,6 +645,7 @@ A key is a special attribute you must add when rendering lists.
     <li key={index}>{fruit}</li>
   ))}
 </ul>
+
 ```
 - The key helps React identify which items have changed, been added, or removed.
 - This improves performance and avoids bugs when the list updates.
