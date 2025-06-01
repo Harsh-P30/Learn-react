@@ -564,7 +564,7 @@ import { useState, useEffect } from 'react';
 ```
 
 
-Some Hooks -> 
+### Some Hooks -> 
 - useState → Manages local component state.
 - useEffect → Runs side effects (like API calls, subscriptions, DOM updates).
 - useContext → Shares and accesses global/context data across components.
@@ -603,7 +603,8 @@ function ImageGallery() {
 - You update the value using setValue, and React re-renders the component.
 - Example → counter, form input, toggle, etc.
 - It replaces the need for state in class components.
-# useEffect
+  
+## useEffect
 - useEffect is a React Hook that lets you synchronize a component with an external system.
 
 ```bash
@@ -636,7 +637,7 @@ useEffect(() => {   // Run only one time
 
 
 
-## My notes
+### My notes on useEffect
 
 useEffect hooks help perform side effect in our component.
 
@@ -674,9 +675,43 @@ const refContainer = useRef(initialValue);
 
 - current: Initially, it’s set to the initialValue you have passed. You can later set it to something else. If you pass the ref object to React as a ref attribute to a JSX node, React will set its current property.
 
+### my notes on useRef
+**useRef** is a react hook that allow us to create mutable variables, which will not re-render the components.
+
+**useRef** is also used for accessing DOM elements and we can modify them.
 
 
-## 🔑 2. What are keys?
+## useMemo Hooks
+
+**useMemo** is a React Hook that memoizes (i.e., remembers) the result of a function, so that React doesn’t have to recalculate it every time the component re-renders — unless dependencies change.
+
+
+**Why use useMemo**
+- Performance Optimization
+    - If you have an expensive calculation (like filtering a large list or computing a derived value), useMemo prevents re-running that calculation on every render unless the inputs actually change.
+  
+**Syntax**
+```bash
+const memoizedValue = useMemo(() => computeValue(a, b), [a, b]);
+
+```
+**When NOT to use useMemo**
+- For lightweight calculations, useMemo is unnecessary and can even make performance worse.
+
+- Don't use it just to "optimize" everything — use it only for actual performance bottlenecks.
+
+
+### myNotes on useMemo
+- The react useMemo Hook returns a memorized value.(it's like caching a value so that it doesn't need to be recalculated.)
+- useMemo only runs when one of its dependencies get updated.
+- This can improve the performance of the application. There is one more hook in react to improve performance.that is useCallback hook.
+- The useMemo hook and useCallback hooks are similar. the main difference is:
+      - useMemo returns a memoized value.
+      - useCallback returns a memoized function.
+
+
+
+# 🔑 2. What are keys?
 A key is a special attribute you must add when rendering lists.
 
 ```bash
