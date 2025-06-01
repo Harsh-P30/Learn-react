@@ -603,16 +603,8 @@ function ImageGallery() {
 - You update the value using setValue, and React re-renders the component.
 - Example → counter, form input, toggle, etc.
 - It replaces the need for state in class components.
-
-## useEffect
+# useEffect
 - useEffect is a React Hook that lets you synchronize a component with an external system.
-- useEffect allow you to perform side effect in your component.
-  **like**
-- Fetching data from api.
-- Directly updating the DOM 
-- Timers like setTimeOut and setInterval
-  
-*To use useEffect you have to provide two things First one **callback function** and **dependency***
 
 ```bash
 useEffect(setup, dependencies?)
@@ -642,6 +634,21 @@ useEffect(() => {   // Run only one time
 - Reading the latest props and state from an Effect.
 - Displaying different content on the server and the client.
 
+
+
+## My notes
+
+useEffect hooks help perform side effect in our component.
+
+Basically help us to deside lifecycle of our component.
+
+
+
+**when we use useEffect without any dependency its runs infinite**
+
+- empty array **[]** so it call callback function only one time. 
+- **[input]** when even *input*(variable) change, it will call callback function again.also you can add multiple variable
+   *input -> from App.jsx and it is a variable*
 
 
 
