@@ -519,12 +519,43 @@ return (
 );
 ```
 
+# 📋 1. What is a list and keys in React?
+In React, a list is just when you render multiple elements/components dynamically using an array.
+
+```bash
+const fruits = ["Apple", "Banana", "Cherry"];
+
+return (
+  <ul>
+    {fruits.map(fruit => (
+      <li>{fruit}</li>
+    ))}
+  </ul>
+);
+```
+
+-  We map over an array to create a list of JSX elements.
+-  Each item becomes an <li> inside the <ul>.
+
+
 # 💥 What are React Hooks?
 - Hooks are special functions in React that let you use state, lifecycle features, and other React capabilities in functional components — without writing class components. 
 
 - They were introduced in React 16.8 to make functional components much more powerful. 
+- Hooks are special functions,that allow us to use **state** and other React Features in functional component.*React Hooks cannot be used directly in class components.*
+- Earlier, When we used to create react app using Functional component,then we didn't have access to the state management and lifecycle method.
+- In other words, Hooks are the functions that make functional components work like calss components.
+- Hooks made react functional components so easy to use.
+- Developer prefer functional component over class component.
 
-- it is use to update data in UI. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
+### Benefits of React Hooks?
+- React hooks simplify the code, improves the readability, reusability and overall performance of the application.
+  
+  
+- **it is use to update data in UI**. Hooks give you control over state, behavior, data, and UI flow in React components. Hooks let you control how your app looks, behaves, and works with data — without writing class code.
+
+- Hooks are functions in React that allow components to monitor and manage state and lifecycle features directly, without needing to use classes or manual intervention.
+
 
 Before using any hooks please import that like
   
@@ -535,9 +566,9 @@ import { useState, useEffect } from 'react';
 
 Some Hooks -> 
 - useState → Manages local component state.
-- useEffect → Runs side effects (like API calls, subscriptions, DOM updates). 
-- useContext → Shares and accesses global/context data across components. 
-- useRef → Holds a reference to a DOM element or stores persistent mutable values. 
+- useEffect → Runs side effects (like API calls, subscriptions, DOM updates).
+- useContext → Shares and accesses global/context data across components.
+- useRef → Holds a reference to a DOM element or stores persistent mutable values.
 - useMemo → Caches computed values to avoid recalculating on every render.
 - useCallback → Caches functions to prevent unnecessary re-creations on each render.
 - useReducer → Handles complex state updates with a reducer pattern.
@@ -552,6 +583,8 @@ Some Hooks ->
 
 - useState declares a state variable that you can update directly.
 - useReducer declares a state variable with the update logic inside a reducer function.
+- useState is a react hook, which creates an **state variable**. which helps us to track state in components & updates the user interface when state changes.
+- 
 
 ```bash
 function ImageGallery() {
@@ -560,10 +593,12 @@ function ImageGallery() {
 ```
 
 - const [state, setState] = useState(initialValue);
-- Every time you call setState, React:
+**Every time you call setState, React:**
 - updates the value
 - re-renders the component
 - useState lets you add and manage data (state) in React functional components.
+  <br>
+  <br>
 - Syntax → const [value, setValue] = useState(initialValue)
 - You update the value using setValue, and React re-renders the component.
 - Example → counter, form input, toggle, etc.
@@ -571,6 +606,13 @@ function ImageGallery() {
 
 ## useEffect
 - useEffect is a React Hook that lets you synchronize a component with an external system.
+- useEffect allow you to perform side effect in your component.
+  **like**
+- Fetching data from api.
+- Directly updating the DOM 
+- Timers like setTimeOut and setInterval
+  
+*To use useEffect you have to provide two things First one **callback function** and **dependency***
 
 ```bash
 useEffect(setup, dependencies?)
@@ -626,24 +668,6 @@ const refContainer = useRef(initialValue);
 - current: Initially, it’s set to the initialValue you have passed. You can later set it to something else. If you pass the ref object to React as a ref attribute to a JSX node, React will set its current property.
 
 
-
-# 📋 1. What is a list and keys in React?
-In React, a list is just when you render multiple elements/components dynamically using an array.
-
-```bash
-const fruits = ["Apple", "Banana", "Cherry"];
-
-return (
-  <ul>
-    {fruits.map(fruit => (
-      <li>{fruit}</li>
-    ))}
-  </ul>
-);
-```
-
--  We map over an array to create a list of JSX elements.
--  Each item becomes an <li> inside the <ul>.
 
 ## 🔑 2. What are keys?
 A key is a special attribute you must add when rendering lists.
