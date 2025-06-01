@@ -31,11 +31,11 @@ useEffect(() => {   // Run only one time
 
 
 
-## My notes
+## My notes on useEffect
 
-useEffect hooks help perform side effect in our component.
+    useEffect hooks help perform side effect in our component.
 
-Basically help us to deside lifecycle of our component.
+    Basically help us to deside lifecycle of our component.
 
 
 
@@ -43,4 +43,3 @@ Basically help us to deside lifecycle of our component.
 
 - empty array **[]** so it call callback function only one time. 
 - **[input]** when even *input*(variable) change, it will call callback function again.also you can add multiple variable *input -> from App.jsx and it is a variable*
-- 
