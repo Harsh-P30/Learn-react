@@ -536,6 +536,23 @@ return (
 
 -  We map over an array to create a list of JSX elements.
 -  Each item becomes an <li> inside the <ul>.
+  
+  
+# 🔑 2. What are keys?
+A key is a special attribute you must add when rendering lists.
+
+```bash
+<ul>
+  {fruits.map((fruit, index) => (
+    <li key={index}>{fruit}</li>
+  ))}
+</ul>
+
+```
+- The key helps React identify which items have changed, been added, or removed.
+- This improves performance and avoids bugs when the list updates.
+
+
 
 
 # 💥 What are React Hooks?
@@ -825,25 +842,58 @@ const myFunc = useCallback(() => {...}, [dependencies]);
 
 
 
+## Custom Hook
+- A custom hook is a reusable function in React that starts with the word use and lets you extract logic used in multiple components.
+- It helps you avoid code repetition and keeps your code clean and organized.
+- A custom hook is just a normal JavaScript function in React that starts with use and allows you to reuse code logic (especially useState, useEffect, etc.) in multiple components.
+- It’s like making your own tool that you can use anywhere in your app!
+
+
+
+**🧽 Why Do We Use Custom Hooks?**
+Imagine you are copy-pasting the same code (like a timer or form handler) in many places.
+
+
+That’s messy, right? 🤯
+
+
+**Custom hooks help you:**
+-  Avoid repeating code
+-  Make your code cleaner
+-  Organize logic better
+-  Reuse things easily
+
+
+**🧪 Custom Hooks Can Contain:**
+- useState
+- useEffect
+- useRef
+- useReducer
+- Even other custom hooks!
+
+
+
+### myNotes on Custom Hook
+- React allows us to create our own hook which is know as custom hook.
+ 
 
 
 
 
 
 
-# 🔑 2. What are keys?
-A key is a special attribute you must add when rendering lists.
 
-```bash
-<ul>
-  {fruits.map((fruit, index) => (
-    <li key={index}>{fruit}</li>
-  ))}
-</ul>
 
-```
-- The key helps React identify which items have changed, been added, or removed.
-- This improves performance and avoids bugs when the list updates.
+
+
+
+
+
+
+
+
+
+
 
 ## ⚠ Why keys are important
 - Without keys → React will re-render everything blindly.
