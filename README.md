@@ -574,7 +574,7 @@ import { useState, useEffect } from 'react';
 - useReducer → Handles complex state updates with a reducer pattern.
 
 
-## UseState
+## UseState Hook
 - useState is a React Hook that lets you add state (data that can change) to a **functional component**.
   
 - State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
@@ -604,7 +604,14 @@ function ImageGallery() {
 - Example → counter, form input, toggle, etc.
 - It replaces the need for state in class components.
   
-## useEffect
+**🤔 Why not just use useState?**
+- useState is simple, but can become messy when:
+    - You have multiple states that depend on each other
+    - You need to do different things based on different user actions (e.g., ADD, DELETE, RESET)
+    - *we use useReducer hook to overcome these mess*
+
+
+## useEffect Hook
 - useEffect is a React Hook that lets you synchronize a component with an external system.
 
 ```bash
@@ -653,7 +660,7 @@ Basically help us to deside lifecycle of our component.
 
 
 
-## useRef hook
+## useRef Hook
 - useRef is a React hook that gives you a persistent, mutable container whose .current value survives re-renders — but changing it does NOT trigger re-render.
 **It’s often used to:**
 - Keep a reference to a DOM element
@@ -681,7 +688,7 @@ const refContainer = useRef(initialValue);
 **useRef** is also used for accessing DOM elements and we can modify them.
 
 
-## useMemo Hooks
+## useMemo Hook
 
 **useMemo** is a React Hook that memoizes (i.e., remembers) the result of a function, so that React doesn’t have to recalculate it every time the component re-renders — unless dependencies change.
 
@@ -737,7 +744,7 @@ const myFunc = useCallback(() => {...}, [dependencies]);
   - You care about performance.
 
 
-## useContext Hooks
+## useContext Hook
 - useContext is a React Hook that lets you use data from a context anywhere in your component tree without passing props manually at every level.
 - Think of it like a shared box of data 📦 that any component can access — no matter how deep it is.
 - We use useContext to access shared data (like theme or user info) across components without passing props manually at every level.
@@ -759,6 +766,44 @@ const myFunc = useCallback(() => {...}, [dependencies]);
 
 
   **you can pass multiple data by wrapping into object{} and array[], for accessing data you can use destructuring;
+
+## useReducer Hook
+- **useReducer helps manage complex state logic in React using a reducer function, like a mini Redux.**
+- useReducer is a React Hook used to manage more complex state logic in your component — especially when you have multiple related state values or when state updates depend on the previous state.
+- It works like a mini version of Redux inside your component.
+
+```bash
+   const [state, dispatch] = useReducer(reducerFunction, initialState);
+```
+
+- state: your current state (just like from useState).
+- dispatch: a function you call to update the state.
+- reducerFunction: decides how to update the state.
+- initialState: the starting value of your state.
+  
+**Why use useReducer**
+- it helps to cleaner and more organized than useState calls.
+- it helps to despatch to handle multiple actions like in Redux.
+- it helpful when state depends on previous state.
+  
+
+
+
+### myNotes on useReducer Hook
+- useReducer is similar to useState, But instead of providing state and setter function. it provides state and dispatch function.
+- The useReducer Hook accepts two arguments
+  - Reducer function
+  - Initial State
+- and it returns the dispatch  method and current state.
+  
+- The reducer function specifies how the state gets updated.
+
+
+
+
+
+
+
 
 
 
